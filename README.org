@@ -1,0 +1,130 @@
+#+title: terraform-aws-iam-roles-anywhere-example
+* Overview
+  This Terraform configuration provides an example of how AWS IAM Roles Anywhere can be configured. It creates the following resources:
+  - Three IAM roles that have different levels of access using basic AWS managed policies:
+    + Read-only
+    + Power user
+    + Administrator
+  - A private certificate authority hierarchy that has distinct AWS Private CAs to issue end-entity certificates that can be used to obtain temporary session credentials to assume the role that has a trust policy allowing each CA's corresponding trust anchor to assume the role, each of which is associated with a single profile that has an optional session policy that restricts access via source IP address.
+* Prerequisites
+  - Git
+  - Terraform
+  - =jq= 
+  - AWS CLI
+* Suggested Method of Deployment and Usage
+  This Terraform configuration has been tested and verified to work with AWS CloudShell and so the following instructions apply thereto. The instructions therefore may not apply exactly to environments that differ from what is provided by CloudShell.
+  1. Delete CloudShell environment and launch a new one to ensure a fresh environment that has enough available space on filesystems.
+  2. Install Terraform.
+     #+begin_src shell
+     curl https://gist.githubusercontent.com/RhubarbSin/d3db401da906015ff2a88cca1a42b027/raw/ddf6ecbadbbf7304a97d7b5657216af99c8bff49/install-terraform-amazon-linux-2023.sh | bash
+     #+end_src
+  3. Install dependencies for testing.
+     1. Install the Go programming language and a basic development environment.
+        #+begin_src shell
+        sudo dnf install --assumeyes golang '@Development Tools'
+        #+end_src
+     2. Clone the [[https://github.com/aws/rolesanywhere-credential-helper][GitHub repository for the AWS IAM Roles Anywhere credential helper]].
+        #+begin_src shell
+        git clone https://github.com/aws/rolesanywhere-credential-helper.git
+        #+end_src
+     3. Set the =GOPATH= environment variable to avoid consuming all space in home directory of =cloudshell-user= account.
+        #+begin_src shell
+        export GOPATH=/var/tmp/go
+        #+end_src
+     4. Build the package.
+        #+begin_src shell
+        make -C rolesanywhere-credential-helper release
+        #+end_src
+  4. Deploy configuration for IAM Roles Anywhere.
+     1. Clone this GitHub repository.
+        #+begin_src shell
+        git clone https://github.com/RhubarbSin/terraform-aws-iam-roles-anywhere-example.git
+        #+end_src
+     2. Change to the repository’s directory.
+        #+begin_src shell
+        cd terraform-aws-iam-roles-anywhere-example
+        #+end_src
+     3. Initialize the working directory.
+        #+begin_src shell
+        terraform init
+        #+end_src
+     4. Create the infrastructure.
+        #+begin_src shell
+        terraform apply -auto-approve
+        #+end_src
+  5. Test by creating temporary credentials in the credentials file once for each profile and checking the functionality of the profile.
+     1. Create directory for credentials file.
+        #+begin_src shell
+        mkdir ~/.aws
+        #+end_src
+     2. ReadOnly profile:
+        #+begin_src shell
+        ~/rolesanywhere-credential-helper/build/bin/aws_signing_helper update \
+            --once \
+            --session-duration 43200 \
+            --region "$(terraform output -raw region)" \
+            --certificate "$(terraform output -json certificate_files | jq -r .read_only)" \
+            --private-key "$(terraform output -json key_files | jq -r .read_only)" \
+            --role-arn "$(terraform output -json role_arns | jq -r .read_only)" \
+            --trust-anchor-arn "$(terraform output -json trust_anchor_arns | jq -r .read_only)" \
+            --profile-arn "$(terraform output -json profile_arns | jq -r .read_only)" \
+            --profile readonly
+        #+end_src
+        #+begin_src shell
+        aws sts get-caller-identity --output table --profile readonly
+        #+end_src
+     3. PowerUser profile:
+        #+begin_src shell
+        ~/rolesanywhere-credential-helper/build/bin/aws_signing_helper update \
+            --once \
+            --session-duration 43200 \
+            --region "$(terraform output -raw region)" \
+            --certificate "$(terraform output -json certificate_files | jq -r .power_user)" \
+            --private-key "$(terraform output -json key_files | jq -r .power_user)" \
+            --role-arn "$(terraform output -json role_arns | jq -r .power_user)" \
+            --trust-anchor-arn "$(terraform output -json trust_anchor_arns | jq -r .power_user)" \
+            --profile-arn "$(terraform output -json profile_arns | jq -r .power_user)" \
+            --profile poweruser
+        #+end_src
+        #+begin_src shell
+        aws sts get-caller-identity --output table --profile poweruser
+        #+end_src
+     4. Administrator profile:
+        #+begin_src shell
+        ~/rolesanywhere-credential-helper/build/bin/aws_signing_helper update \
+           --once \
+           --session-duration 43200 \
+           --region "$(terraform output -raw region)" \
+           --certificate "$(terraform output -json certificate_files | jq -r .admin)" \
+           --private-key "$(terraform output -json key_files | jq -r .admin)" \
+           --role-arn "$(terraform output -json role_arns | jq -r .admin)" \
+           --trust-anchor-arn "$(terraform output -json trust_anchor_arns | jq -r .admin)" \
+           --profile-arn "$(terraform output -json profile_arns | jq -r .admin)" \
+           --profile admin
+       #+end_src
+       #+begin_src shell
+       aws sts get-caller-identity --output table --profile admin
+       #+end_src
+  6. When finished, delete all of the resources by destroying the infrastructure and removing the credentials file.
+     #+begin_src shell
+     terraform apply -destroy -auto-approve
+     #+end_src
+     #+begin_src shell
+     rm ~/.aws/credentials
+     #+end_src
+  7. Delete the clones of repositories used by the example.
+     #+begin_src shell
+     cd && rm -rf \
+         terraform-aws-iam-roles-anywhere-example \
+         rolesanywhere-credential-helper
+     #+end_src
+* Configuration
+  By default, resources are provisioned in the us-east-2 region. The region used is specified by the value of the /region/ input variable.
+* Notes
+  - Multiple certificates can be issued by the signing private certificate authority (PCA); issuing one certificate per user with an unique private key would allow granular access control via revocation of an individual user's certificate.
+  - Two resources depicted in the diagram and highlighted as part of the /Certificate Revocation Process/ are not included in the Terraform configuration:
+    + EventBridge Rule
+    + Lambda Function
+  - The signing private certificate authority (PCA) will publish certificate revocation lists (CRLs) to the S3 bucket, but the remaining functionality that would subsequently convert and upload the CRLs to Roles Anywhere is not implemented.
+* Diagram
+  [[./terraform-aws-iam-roles-anywhere-example.png]]
