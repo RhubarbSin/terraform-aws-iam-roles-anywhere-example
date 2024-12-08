@@ -18,14 +18,10 @@ output "profile_arns" {
 
 output "certificate_files" {
   value = { for k, v in local_file.this : k => abspath(v.filename) }
-  # value = { for k, v in local_file.this : k => basename(v.filename) }
-  # value = { for k, v in local_file.this : k => v.filename }
 }
 
 output "key_files" {
   value = { for k, v in local_sensitive_file.this : k => abspath(v.filename) }
-  # value = { for k, v in local_sensitive_file.this : k => basename(v.filename) }
-  # value = { for k, v in local_sensitive_file.this : k => v.filename }
 }
 
 output "region" {

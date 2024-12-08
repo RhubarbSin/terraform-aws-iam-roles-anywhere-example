@@ -1,0 +1,253 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/25.0.2 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="25.0.2">
+  <diagram name="Page-1" id="tJTTxUrJRq8FTXFW8xN4">
+    <mxGraphModel dx="1774" dy="2146" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-98" value="Highlight" parent="0" />
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-87" value="One-to-One Relationship&lt;br style=&quot;font-size: 25px;&quot;&gt;Among All Resources&lt;br&gt;(i.e. one set of resources for each role)" style="verticalLabelPosition=middle;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;fontFamily=Helvetica;fontSize=25;labelBackgroundColor=none;fillColor=#b0e3e6;fillOpacity=25;strokeColor=#0e8088;labelPosition=center;align=center;" parent="GsRnU1VMPK_G7D8Tim-P-98" vertex="1">
+          <mxGeometry x="480" y="-300" width="1110" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-88" value="Certificate&lt;br&gt;and Key Pair&lt;br&gt;for Each&lt;br&gt;Individual User" style="verticalLabelPosition=middle;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;fontFamily=Helvetica;fontSize=25;fillOpacity=25;fillColor=#fad9d5;strokeColor=#ae4132;labelPosition=center;align=center;" parent="GsRnU1VMPK_G7D8Tim-P-98" vertex="1">
+          <mxGeometry x="640" y="240" width="180" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-122" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;Certificate Revocation Process&lt;/font&gt;" style="verticalLabelPosition=top;verticalAlign=bottom;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;fontFamily=Helvetica;fontSize=11;fillColor=#d0cee2;labelPosition=center;align=center;spacingTop=0;fillOpacity=25;strokeColor=#56517e;spacingBottom=-40;" parent="GsRnU1VMPK_G7D8Tim-P-98" vertex="1">
+          <mxGeometry x="430" y="650" width="1190" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-97" value="Resources" parent="0" />
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-61" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;startArrow=classic;startFill=1;strokeWidth=2;curved=0;" parent="GsRnU1VMPK_G7D8Tim-P-97" source="GsRnU1VMPK_G7D8Tim-P-1" target="GsRnU1VMPK_G7D8Tim-P-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1030" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-62" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;i&gt;Roles Anywhere&lt;br&gt;retrieves credentials&lt;br&gt;from STS&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=bottom;resizable=0;points=[];labelPosition=left;verticalLabelPosition=top;" parent="GsRnU1VMPK_G7D8Tim-P-61" vertex="1" connectable="0">
+          <mxGeometry x="0.0294" relative="1" as="geometry">
+            <mxPoint x="-21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-83" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=default;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=14;fontColor=#000000;endArrow=classic;endFill=1;entryX=1;entryY=0;entryDx=0;entryDy=0;labelPosition=right;verticalLabelPosition=middle;strokeWidth=2;" parent="GsRnU1VMPK_G7D8Tim-P-97" source="GsRnU1VMPK_G7D8Tim-P-1" target="GsRnU1VMPK_G7D8Tim-P-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-84" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;i&gt;Roles Anywhere&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;i&gt;returns credentials&lt;/i&gt;&lt;/div&gt;&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="GsRnU1VMPK_G7D8Tim-P-83" vertex="1" connectable="0">
+          <mxGeometry x="0.0941" y="-4" relative="1" as="geometry">
+            <mxPoint x="14" y="-17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-1" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;IAM&lt;br&gt;Roles Anywhere&lt;/b&gt;&lt;/font&gt;" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#DD344C;strokeColor=none;dashed=0;verticalLabelPosition=top;verticalAlign=bottom;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.identity_access_management_iam_roles_anywhere;labelPosition=center;points=[[0,1],[1,1]];" parent="GsRnU1VMPK_G7D8Tim-P-97" vertex="1">
+          <mxGeometry x="1030" y="40" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-2" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Security&lt;br&gt;Token&lt;br&gt;Service&lt;/b&gt;&lt;/font&gt;" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#DD344C;strokeColor=none;dashed=0;verticalLabelPosition=top;verticalAlign=bottom;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.sts_alternate;labelPosition=center;" parent="GsRnU1VMPK_G7D8Tim-P-97" vertex="1">
+          <mxGeometry x="750.05" y="140" width="69.95" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-4" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Root&lt;br&gt;Private&lt;br style=&quot;font-size: 14px;&quot;&gt;Certificate&lt;br style=&quot;font-size: 14px;&quot;&gt;Authority&lt;/b&gt;&lt;/font&gt;" style="points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#000000;fillColor=#DD344C;strokeColor=#ffffff;dashed=0;verticalLabelPosition=top;verticalAlign=bottom;align=center;html=1;fontSize=14;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.private_certificate_authority;labelPosition=center;" parent="GsRnU1VMPK_G7D8Tim-P-97" vertex="1">
+          <mxGeometry x="20" y="-140" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-5" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Temporary&lt;br&gt;Security&lt;br&gt;Credentials&lt;/b&gt;&lt;/font&gt;" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#DD344C;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.temporary_security_credential;" parent="GsRnU1VMPK_G7D8Tim-P-97" vertex="1">
+          <mxGeometry x="1286.5" y="400" width="77" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=14;fontColor=#000000;endArrow=none;endFill=0;strokeWidth=2;" parent="GsRnU1VMPK_G7D8Tim-P-97" source="GsRnU1VMPK_G7D8Tim-P-6" target="GsRnU1VMPK_G7D8Tim-P-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-6" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;IAM Role&lt;/b&gt;&lt;/font&gt;" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#DD344C;strokeColor=none;dashed=0;verticalLabelPosition=top;verticalAlign=bottom;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.role;fontFamily=Helvetica;labelPosition=center;" parent="GsRnU1VMPK_G7D8Tim-P-97" vertex="1">
+          <mxGeometry x="1090" y="-123" width="78" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-104" value="&lt;i style=&quot;border-color: var(--border-color); font-size: 14px; text-align: right;&quot;&gt;Key is necessary&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;to use certificate&lt;/i&gt;" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;labelBackgroundColor=none;strokeColor=default;align=center;verticalAlign=bottom;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;labelPosition=center;verticalLabelPosition=top;strokeWidth=2;curved=0;spacingLeft=0;" parent="GsRnU1VMPK_G7D8Tim-P-97" source="GsRnU1VMPK_G7D8Tim-P-9" target="GsRnU1VMPK_G7D8Tim-P-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-9" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Private Key&lt;/b&gt;&lt;/font&gt;" style="outlineConnect=0;fontColor=#000000;gradientColor=none;fillColor=#DD344C;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=14;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.data_encryption_key;fontFamily=Helvetica;" parent="GsRnU1VMPK_G7D8Tim-P-97" vertex="1">
+          <mxGeometry x="700" y="520" width="62" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-25" value="&lt;i&gt;Anchor trusts&lt;br&gt;any valid certificate&lt;br&gt;issued by&lt;br&gt;signing PCA&lt;/i&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=14;fontColor=#000000;endArrow=none;endFill=0;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=middle;labelBackgroundColor=none;strokeWidth=2;" parent="GsRnU1VMPK_G7D8Tim-P-97" source="GsRnU1VMPK_G7D8Tim-P-10" target="GsRnU1VMPK_G7D8Tim-P-16" edge="1">
+          <mxGeometry x="-0.1765" y="40" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="-100" />
+              <mxPoint x="670" y="-100" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=14;fontColor=#000000;endArrow=none;endFill=0;verticalAlign=bottom;labelPosition=center;verticalLabelPosition=top;align=center;strokeWidth=2;" parent="GsRnU1VMPK_G7D8Tim-P-97" source="GsRnU1VMPK_G7D8Tim-P-10" target="GsRnU1VMPK_G7D8Tim-P-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-29" value="&lt;i&gt;Policy trusts&lt;br&gt;anchor to&lt;br&gt;assume role&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontFamily=Helvetica;fontColor=#000000;labelBackgroundColor=none;" parent="GsRnU1VMPK_G7D8Tim-P-28" vertex="1" connectable="0">
+          <mxGeometry x="-0.072" y="1" relative="1" as="geometry">
+            <mxPoint y="35" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-10" value="&lt;b&gt;Roles Anywhere&lt;br&gt;Trust Anchor&lt;/b&gt;" style="shape=mxgraph.signs.transportation.anchor_1;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=top;verticalAlign=bottom;align=center;dashed=0;fontFamily=Helvetica;fontSize=14;fontColor=#000000;labelPosition=center;" parent="GsRnU1VMPK_G7D8Tim-P-97" vertex="1">
+          <mxGeometry x="740" y="-141" width="82" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-11" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;IAM Role&lt;br&gt;Trust Policy&lt;/b&gt;&lt;/font&gt;" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#7AA116;strokeColor=none;dashed=0;verticalLabelPosition=top;verticalAlign=bottom;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.policy;fontFamily=Helvetica;labelPosition=center;" parent="GsRnU1VMPK_G7D8Tim-P-97" vertex="1">
+          <mxGeometry x="970" y="-134.5" width="78" height="67" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-12" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Session Policy&lt;/b&gt;&lt;/font&gt;" style="outlineConnect=0;fontColor=#000000;gradientColor=none;fillColor=#7AA116;strokeColor=none;dashed=0;verticalLabelPosition=top;verticalAlign=bottom;align=center;html=1;fontSize=14;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.policy;fontFamily=Helvetica;labelPosition=center;" parent="GsRnU1VMPK_G7D8Tim-P-97" vertex="1">
+          <mxGeometry x="1490" y="-134.5" width="78" height="67" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-42" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=14;fontColor=#000000;startArrow=classic;startFill=1;endArrow=none;endFill=0;entryX=1;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;curved=0;" parent="GsRnU1VMPK_G7D8Tim-P-97" source="GsRnU1VMPK_G7D8Tim-P-13" target="GsRnU1VMPK_G7D8Tim-P-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-43" value="&lt;i&gt;Signing PCA&lt;br&gt;signs end-entity&lt;br&gt;certificate&lt;/i&gt;" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontFamily=Helvetica;fontColor=#000000;labelPosition=right;verticalLabelPosition=middle;" parent="GsRnU1VMPK_G7D8Tim-P-42" vertex="1" connectable="0">
+          <mxGeometry x="0.232" y="1" relative="1" as="geometry">
+            <mxPoint x="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-78" value="&lt;meta charset=&quot;utf-8&quot;&gt;&lt;i style=&quot;border-color: var(--border-color); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 14px; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;Certificate is&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;necessary to&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;sign request&lt;/i&gt;" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=14;fontColor=#000000;endArrow=classic;endFill=1;labelPosition=center;verticalLabelPosition=top;strokeWidth=2;spacingLeft=84;" parent="GsRnU1VMPK_G7D8Tim-P-97" source="GsRnU1VMPK_G7D8Tim-P-13" target="GsRnU1VMPK_G7D8Tim-P-14" edge="1">
+          <mxGeometry x="-0.0763" y="27" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-13" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Certificate&lt;/b&gt;&lt;/font&gt;" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#7AA116;strokeColor=none;dashed=0;verticalLabelPosition=top;verticalAlign=bottom;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.certificate_manager;fontFamily=Helvetica;labelPosition=center;" parent="GsRnU1VMPK_G7D8Tim-P-97" vertex="1">
+          <mxGeometry x="701.5" y="407" width="59" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" parent="GsRnU1VMPK_G7D8Tim-P-97" source="GsRnU1VMPK_G7D8Tim-P-14" target="GsRnU1VMPK_G7D8Tim-P-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-64" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;i&gt;Credential helper&lt;br&gt;sends signed request&lt;br&gt;to Roles Anywhere,&lt;br&gt;specifying trust&lt;br&gt;anchor and profile&lt;/i&gt;&lt;br&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=right;verticalAlign=middle;resizable=0;points=[];labelPosition=left;verticalLabelPosition=middle;" parent="GsRnU1VMPK_G7D8Tim-P-63" vertex="1" connectable="0">
+          <mxGeometry x="-0.0036" y="-4" relative="1" as="geometry">
+            <mxPoint x="-14" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;verticalAlign=top;labelPosition=center;verticalLabelPosition=top;align=center;strokeWidth=2;" parent="GsRnU1VMPK_G7D8Tim-P-97" source="GsRnU1VMPK_G7D8Tim-P-14" target="GsRnU1VMPK_G7D8Tim-P-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1190" y="440" />
+              <mxPoint x="1190" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-68" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;i&gt;Credential helper&lt;br&gt;delivers credentials&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelPosition=center;verticalLabelPosition=top;" parent="GsRnU1VMPK_G7D8Tim-P-67" vertex="1" connectable="0">
+          <mxGeometry x="-0.0812" y="-1" relative="1" as="geometry">
+            <mxPoint y="-21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-14" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;AWS&lt;br&gt;Credential&lt;br&gt;Helper&lt;/b&gt;&lt;/font&gt;" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.generic_application;fontFamily=Helvetica;points=[[0,1],[1,0]];" parent="GsRnU1VMPK_G7D8Tim-P-97" vertex="1">
+          <mxGeometry x="1029.98" y="407" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-15" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Intermediate&lt;br&gt;Private&lt;br style=&quot;font-size: 14px;&quot;&gt;Certificate&lt;br style=&quot;font-size: 14px;&quot;&gt;Authority&lt;/b&gt;&lt;/font&gt;" style="points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#000000;fillColor=#DD344C;strokeColor=#ffffff;dashed=0;verticalLabelPosition=top;verticalAlign=bottom;align=center;html=1;fontSize=14;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.private_certificate_authority;labelPosition=center;" parent="GsRnU1VMPK_G7D8Tim-P-97" vertex="1">
+          <mxGeometry x="250" y="-140" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-112" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=top;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;labelPosition=center;verticalLabelPosition=top;strokeWidth=2;curved=0;" parent="GsRnU1VMPK_G7D8Tim-P-97" target="GsRnU1VMPK_G7D8Tim-P-107" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="531" y="786" />
+            </Array>
+            <mxPoint x="530.99" y="-76" as="sourcePoint" />
+            <mxPoint x="839.9982725615316" y="785.9999999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-113" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;i&gt;PCA publishes CRL to S3 bucket&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;labelBackgroundColor=none;" parent="GsRnU1VMPK_G7D8Tim-P-112" vertex="1" connectable="0">
+          <mxGeometry x="0.6774" y="3" relative="1" as="geometry">
+            <mxPoint x="-1" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-16" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Signing&lt;br&gt;Private&lt;br style=&quot;font-size: 14px;&quot;&gt;Certificate&lt;br style=&quot;font-size: 14px;&quot;&gt;Authority&lt;/b&gt;&lt;/font&gt;" style="points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#000000;fillColor=#DD344C;strokeColor=#ffffff;dashed=0;verticalLabelPosition=top;verticalAlign=bottom;align=center;html=1;fontSize=14;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.private_certificate_authority;labelPosition=center;points=[[0,1],[1,1]];" parent="GsRnU1VMPK_G7D8Tim-P-97" vertex="1">
+          <mxGeometry x="492" y="-140" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=14;fontColor=#000000;endArrow=none;endFill=0;strokeWidth=2;" parent="GsRnU1VMPK_G7D8Tim-P-97" source="GsRnU1VMPK_G7D8Tim-P-18" target="GsRnU1VMPK_G7D8Tim-P-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-32" value="&lt;i&gt;Profile is&lt;br&gt;associated with&lt;br&gt;only one role&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=top;resizable=0;points=[];fontSize=14;fontFamily=Helvetica;fontColor=#000000;labelPosition=center;verticalLabelPosition=top;labelBackgroundColor=none;" parent="GsRnU1VMPK_G7D8Tim-P-31" vertex="1" connectable="0">
+          <mxGeometry x="0.0425" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-18" value="&lt;b&gt;Roles Anywhere&lt;br&gt;Profile&lt;/b&gt;" style="verticalLabelPosition=top;html=1;fillColor=#6ABD46;strokeColor=#ffffff;verticalAlign=bottom;align=center;points=[[0.085,0.085,0],[0.915,0.085,0],[0.915,0.915,0],[0.085,0.915,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];pointerEvents=1;shape=mxgraph.cisco_safe.compositeIcon;bgIcon=mxgraph.cisco_safe.architecture.generic_appliance;resIcon=mxgraph.cisco_safe.architecture.policy;dashed=0;fontFamily=Helvetica;fontSize=14;fontColor=#000000;labelPosition=center;" parent="GsRnU1VMPK_G7D8Tim-P-97" vertex="1">
+          <mxGeometry x="1300" y="-126" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Helvetica;fontSize=14;fontColor=#000000;strokeWidth=2;" parent="GsRnU1VMPK_G7D8Tim-P-97" source="GsRnU1VMPK_G7D8Tim-P-4" target="GsRnU1VMPK_G7D8Tim-P-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-22" value="&lt;i&gt;Root PCA&lt;br&gt;signs certificate&lt;br&gt;for subordinate CA &lt;br&gt;(path length: 1)&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=top;resizable=0;points=[];fontSize=14;fontFamily=Helvetica;fontColor=#000000;labelPosition=center;verticalLabelPosition=top;" parent="GsRnU1VMPK_G7D8Tim-P-21" vertex="1" connectable="0">
+          <mxGeometry x="-0.022" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Helvetica;fontSize=14;fontColor=#000000;strokeWidth=2;" parent="GsRnU1VMPK_G7D8Tim-P-97" source="GsRnU1VMPK_G7D8Tim-P-15" target="GsRnU1VMPK_G7D8Tim-P-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-24" value="&lt;i&gt;Intermediate PCA&lt;br&gt;signs certificate&lt;br&gt;for subordinate CA&lt;br&gt;(path length: 0)&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=top;resizable=0;points=[];fontSize=14;fontFamily=Helvetica;fontColor=#000000;labelPosition=center;verticalLabelPosition=top;" parent="GsRnU1VMPK_G7D8Tim-P-23" vertex="1" connectable="0">
+          <mxGeometry x="-0.0152" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Helvetica;fontSize=14;fontColor=#000000;endArrow=none;endFill=0;strokeWidth=2;" parent="GsRnU1VMPK_G7D8Tim-P-97" source="GsRnU1VMPK_G7D8Tim-P-12" target="GsRnU1VMPK_G7D8Tim-P-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-34" value="&lt;i&gt;Policy restricts&lt;br&gt;use of profile&lt;br&gt;by source IP&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=top;resizable=0;points=[];fontSize=14;fontFamily=Helvetica;fontColor=#000000;labelPosition=center;verticalLabelPosition=top;labelBackgroundColor=none;" parent="GsRnU1VMPK_G7D8Tim-P-33" vertex="1" connectable="0">
+          <mxGeometry x="-0.0416" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-37" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Helvetica;fontSize=14;fontColor=#000000;endArrow=none;endFill=0;strokeWidth=2;curved=0;" parent="GsRnU1VMPK_G7D8Tim-P-97" source="GsRnU1VMPK_G7D8Tim-P-1" target="GsRnU1VMPK_G7D8Tim-P-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-38" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Helvetica;fontSize=14;fontColor=#000000;endArrow=none;endFill=0;strokeWidth=2;curved=0;" parent="GsRnU1VMPK_G7D8Tim-P-97" source="GsRnU1VMPK_G7D8Tim-P-1" target="GsRnU1VMPK_G7D8Tim-P-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-118" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=1;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=default;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;labelPosition=right;verticalLabelPosition=middle;strokeWidth=2;curved=0;" parent="GsRnU1VMPK_G7D8Tim-P-97" source="GsRnU1VMPK_G7D8Tim-P-106" target="GsRnU1VMPK_G7D8Tim-P-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1460" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-121" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;i&gt;Lambda function&lt;br&gt;uploads CRL to&lt;br&gt;Roles Anywhere&lt;br&gt;&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="GsRnU1VMPK_G7D8Tim-P-118" vertex="1" connectable="0">
+          <mxGeometry x="-0.3478" y="3" relative="1" as="geometry">
+            <mxPoint x="63" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-106" value="&lt;i&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Lambda function&lt;br&gt;converts CRL&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;i style=&quot;background-color: initial; font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;to PEM format&lt;/font&gt;&lt;/i&gt;&lt;/div&gt;&lt;/font&gt;&lt;/i&gt;" style="outlineConnect=0;dashed=0;verticalLabelPosition=middle;verticalAlign=middle;align=left;html=1;shape=mxgraph.aws3.lambda_function;fillColor=#F58534;gradientColor=none;fontFamily=Helvetica;fontSize=11;fontColor=default;labelPosition=right;spacingLeft=6;" parent="GsRnU1VMPK_G7D8Tim-P-97" vertex="1">
+          <mxGeometry x="1430" y="743" width="69" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-107" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;S3 Bucket&lt;/font&gt;&lt;/b&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#7AA116;strokeColor=none;dashed=0;verticalLabelPosition=top;verticalAlign=bottom;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.bucket_with_objects;fontFamily=Helvetica;labelPosition=center;" parent="GsRnU1VMPK_G7D8Tim-P-97" vertex="1">
+          <mxGeometry x="840" y="740" width="75" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-108" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;EventBridge&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Rule&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#E7157B;strokeColor=#ffffff;dashed=0;verticalLabelPosition=top;verticalAlign=bottom;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.eventbridge;fontFamily=Helvetica;labelPosition=center;" parent="GsRnU1VMPK_G7D8Tim-P-97" vertex="1">
+          <mxGeometry x="1140" y="740" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-110" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=default;align=right;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;labelPosition=left;verticalLabelPosition=middle;strokeWidth=2;" parent="GsRnU1VMPK_G7D8Tim-P-97" source="GsRnU1VMPK_G7D8Tim-P-109" target="GsRnU1VMPK_G7D8Tim-P-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-111" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;i&gt;User&lt;br&gt;revokes&lt;br&gt;&lt;div style=&quot;&quot;&gt;certificate&lt;/div&gt;&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=right;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="GsRnU1VMPK_G7D8Tim-P-110" vertex="1" connectable="0">
+          <mxGeometry x="0.0855" y="6" relative="1" as="geometry">
+            <mxPoint x="-6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-109" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;User&lt;/b&gt;&lt;/font&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.user;fontFamily=Helvetica;" parent="GsRnU1VMPK_G7D8Tim-P-97" vertex="1">
+          <mxGeometry x="452" y="740" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-114" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=bottom;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;labelPosition=center;verticalLabelPosition=top;strokeWidth=2;" parent="GsRnU1VMPK_G7D8Tim-P-97" source="GsRnU1VMPK_G7D8Tim-P-107" target="GsRnU1VMPK_G7D8Tim-P-108" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-115" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;i&gt;EventBridge captures&lt;br&gt;PutObject call&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;labelBackgroundColor=none;" parent="GsRnU1VMPK_G7D8Tim-P-114" vertex="1" connectable="0">
+          <mxGeometry x="-0.0171" y="-1" relative="1" as="geometry">
+            <mxPoint x="-2" y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-116" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;strokeWidth=2;" parent="GsRnU1VMPK_G7D8Tim-P-97" source="GsRnU1VMPK_G7D8Tim-P-108" target="GsRnU1VMPK_G7D8Tim-P-106" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-117" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;i&gt;EventBridge triggers&lt;br&gt;Lambda function&lt;br&gt;&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;labelBackgroundColor=none;" parent="GsRnU1VMPK_G7D8Tim-P-116" vertex="1" connectable="0">
+          <mxGeometry x="-0.038" y="-1" relative="1" as="geometry">
+            <mxPoint y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-119" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;strokeWidth=2;curved=0;" parent="GsRnU1VMPK_G7D8Tim-P-97" source="GsRnU1VMPK_G7D8Tim-P-107" target="GsRnU1VMPK_G7D8Tim-P-106" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="878" y="860" />
+              <mxPoint x="1465" y="860" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GsRnU1VMPK_G7D8Tim-P-120" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;i&gt;Lambda function downloads CRL&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;labelBackgroundColor=none;" parent="GsRnU1VMPK_G7D8Tim-P-119" vertex="1" connectable="0">
+          <mxGeometry x="-0.0082" y="1" relative="1" as="geometry">
+            <mxPoint x="-1" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
