@@ -7,9 +7,9 @@
     + Administrator
   - A private certificate authority hierarchy that includes the following AWS Private CAs:
     + One root CA
-    + One intermediate CA for (/e.g./) a single LOB
+    + One intermediate CA (/e.g./ for an individual department or LOB)
     + Three signing CAs to issue end-entity certificates that can be used to obtain temporary session credentials for different roles
-  - Three /Roles Anywhere/ trust anchors that trust certicates issued by their associated signing CA
+  - Three /Roles Anywhere/ trust anchors that trust certicates issued by their associated signing CAs
   - Three /Roles Anywhere/ profiles that can assume only the IAM role allowed by the trust anchor specified in that role's trust policy, with an optional session policy that restricts access by source IP address
 * Prerequisites
   - Git
