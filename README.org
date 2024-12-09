@@ -1,11 +1,16 @@
 #+title: terraform-aws-iam-roles-anywhere-example
 * Overview
   This Terraform configuration provides an example of how AWS IAM Roles Anywhere can be configured. It creates the following resources:
-  - Three IAM roles that have different levels of access using basic AWS managed policies:
+  - Three IAM roles that have different levels of access defined by identity-based managed policies:
     + Read-only
     + Power user
     + Administrator
-  - A private certificate authority hierarchy that has distinct AWS Private CAs to issue end-entity certificates that can be used to obtain temporary session credentials to assume the role that has a trust policy allowing each CA's corresponding trust anchor to assume the role, each of which is associated with a single profile that has an optional session policy that restricts access via source IP address.
+  - A private certificate authority hierarchy that includes the following AWS Private CAs:
+    + One root CA
+    + One intermediate CA for (/e.g./) a single LOB
+    + Three signing CAs to issue end-entity certificates that can be used to obtain temporary session credentials for different roles
+  - Three /Roles Anywhere/ trust anchors that trust certicates issued by their associated signing CA
+  - Three /Roles Anywhere/ profiles that can assume only the IAM role allowed by the trust anchor specified in that role's trust policy, with an optional session policy that restricts access by source IP address
 * Prerequisites
   - Git
   - Terraform
