@@ -133,6 +133,6 @@
   - Two resources depicted in the diagram and highlighted as part of the /Certificate Revocation Process/ are not included in the Terraform configuration:
     + EventBridge Rule
     + Lambda Function
-  - The signing private certificate authorities (PCAs) will publish certificate revocation lists (CRLs) to the S3 bucket, but the remaining functionality that would subsequently convert and upload the CRLs to Roles Anywhere is not implemented.
+  - The signing private certificate authorities (PCAs) will publish certificate revocation lists (CRLs) to the S3 bucket, but the remaining functionality that would subsequently convert and upload the CRLs to Roles Anywhere is not implemented, as noted above.
 * Diagram
   [[./terraform-aws-iam-roles-anywhere-example.png]]
