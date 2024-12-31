@@ -255,8 +255,6 @@ data "aws_iam_policy_document" "trust" {
 }
 
 data "aws_iam_policy_document" "profile" {
-  count = length(var.ip_addresses)
-
   statement {
     actions = ["*"]
 
@@ -265,7 +263,7 @@ data "aws_iam_policy_document" "profile" {
     condition {
       test     = "IpAddress"
       variable = "aws:SourceIp"
-      values   = var.ip_addresses
+      values   = var.cidr_blocks
     }
   }
 }
@@ -300,7 +298,7 @@ resource "aws_rolesanywhere_profile" "this" {
   role_arns = [each.value.arn]
 
   enabled        = true
-  session_policy = length(var.ip_addresses) > 0 ? data.aws_iam_policy_document.profile.0.json : null
+  session_policy = data.aws_iam_policy_document.profile.json
 }
 
 resource "tls_private_key" "this" {
