@@ -124,7 +124,10 @@
          rolesanywhere-credential-helper
      #+end_src
 * Configuration
-  By default, resources are provisioned in the us-east-2 region. The region used is specified by the value of the /region/ input variable.
+** Region
+   By default, resources are provisioned in the us-east-2 region. The region used is specified by the value of the /region/ input variable.
+** Restriction on Source IP
+   By default, access to all profiles is allowed from any IP address. Access can be restricted to specific source IP address ranges with the /cidr_blocks/ variable.
 * Notes
   - Multiple certificates can be issued by each signing private certificate authority (PCA); issuing one certificate per user with an unique private key allows granular access control via revocation of an individual user's certificate.
   - Two resources depicted in the diagram and highlighted as part of the /Certificate Revocation Process/ are not included in the Terraform configuration:
